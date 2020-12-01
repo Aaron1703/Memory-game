@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(105, 97, 112);
+    position: relative;
+}
+
+.animation{
+    position: absolute;
+    top: 50px;
+    left: 360px;
+}
+.heading{
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+    font-family: 'Salsa', cursive;
+
+}
+
+
+#king{
+
+    animation: king1 1s ease infinite;
+}
+
+
+@keyframes king1{
+    from{
+       transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(40deg);
+    }
+}
+
+#queen{
+
+    animation: queen1 1s ease infinite;
+}
+
+
+@keyframes queen1{
+    from{
+       transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(40deg);
+    }
+}

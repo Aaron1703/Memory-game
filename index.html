@@ -98,16 +98,62 @@
         </clipPath>
         </defs>
         </svg>
+
     </div>
-        <div class="login">
-        <a href="login.html">Proceed to login</a>
+    <div class="mainlink">
+    <div class="links">
+        <div class="register">
+            <a href="register.html">New Account</a>
+        </div>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <div class="leaderboard">
+            <a href="leaderboard.html">Check LeaderBoard</a>
         </div>
         <div class="help">
-        <a href="help.html">Need Help?</a>
+            <a href="help.html">Need Help?</a>
         </div>
-        <div class="leaderboard">
-        <a href="leaderboard.html">Check LeaderBoard</a>
-        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+         <div  class="modal" id="id01">
+
+		<form class="modal-content animate" action="register.html"  id = "Log" name="Logpage" method="post" onsubmit="return valid_log();">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+				<img src=""   class="avatar">
+			</div>
+
+			<div class="container">
+				<div class="emal"><label><b>Email</b></label></div>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<div class="password"><label><b>Password</b></label></div>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button value="submit" type="submit" onclick="login_user()">Login</button>
+				<div class="checkbox"><input type="checkbox" checked="checked"> Remember </div>
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+ 				 <a style="color:blue; background-color: rgb(140, 133, 236); padding-left: 0.25cm; padding-right: 0.25cm; padding-top: 0.25cm; padding-bottom: 0.25cm;" href="register.html" > Previous</a>
+				<span class="psw" style="color:blue; background-color: rgb(140, 133, 236); padding-left: 0.25cm; padding-right: 0.25cm;"">Forgot <a href="#" style="color:blue; background-color: rgb(140, 133, 236);">password?</a></span>
+			</div>
+		</form>
+    </div>
+    <script>
+        var audio =new Audio('D:\downloads in d\Chala Jata Hoon - Mere Jeevan Saathi, Kishore Kumar.mp3');
+        audio.play();
+    </script>
+
+
+	<script src="reg.js">
+
+
 
 
 
